@@ -4,8 +4,7 @@ public class ShapeDemo {
 
 	public static void main(String[] args) {
 		ShapeManager manager = ShapeManager.getInstance();
-		Circle t = new Circle();
+		Triangle t = new Triangle();
 		manager.run(t);
-		
 	}
 }
