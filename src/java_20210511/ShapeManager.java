@@ -6,7 +6,7 @@ public class ShapeManager {
 	private ShapeManager() {  //ShapeManager의 생성자 => private이기 때문에 외부에서 객체생성 안됨 =인스턴스 할 수 없음
 	}
 
-	public static ShapeManager getInstance() {  //private에 접근하기 위해 getter사용 (static ShapeManager는 변수)
+	public static ShapeManager getInstance() {  // ShapeManager의 메서드
 		if (single == null) {
 			single = new ShapeManager();
 		}
