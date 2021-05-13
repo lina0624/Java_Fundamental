@@ -5,10 +5,10 @@ package java_20210510;
 //5월7일 코드 활용
 
 public class CalendarDemo {
-	
+
 	public static void main(String[] args) {
-		
-		Calendar c = new Calendar(2021,5,10);
+		// TODO Auto-generated method stub
+		Calendar c = new Calendar(2021,6);
 		c.print();
 	}
 

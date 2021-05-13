@@ -25,13 +25,10 @@ public class Calendar {
 				(year-1)/100 + //100의 배수 제외
 				(year-1)/400;  //400의 배수 포함
 		
-		//2021년도의 1월, 2월, 3월의 합을 구한다.
-		//totalCount = totalCount + 31+ 28+31;
-		
 		boolean isLeafYear = isLeafYear(year);
 		if (isLeafYear) {
 			monthArray[1] = 29;	
-
+		}
 		for (int i=0; i<month-1 ; i++) {
 			totalCount +=monthArray[i];
 		}
@@ -42,16 +39,7 @@ public class Calendar {
 
 	
 	public void print(int year, int month, int day) {
-		/*
-		 * 달력 만들기 1. 1년 1월 1일은 월요일 2. 1년은 365일 이고, 윤년은 366일 - 2월 29일 3. 윤년은 4년마다 발생하고 그
-		 * 중에서 100배수는 제외하고 400의 배수는 제외하지 않는다. 4. 2021년 4월 30일은 무슨 요일 일까요?' 힌트) 2020년까지 총
-		 * 일수, 1-3월까지 총 일수, 30을 더해서 7로 나눈 나머지가 1이면 월요일, 2이면 화요일, 3이면 수요일, 4이면 목요일, 5이면
-		 * 금요일...
-		 */
-
-		//int sum = 365 * 2020 + (505 - 20 + 5) + 31 + 28 + 31 + 30;
-		
-		//2020년까지 총 일수
+	
 		int totalCount = getCount(year, month, day);
 		
 		int dayOfWeek = totalCount % 7;
@@ -69,7 +57,7 @@ public class Calendar {
 			message = "금요일";
 		} else if (dayOfWeek == Calendar.SATURDAY) {
 			message = "토요일";
-		} else if {dayOfWeek == Calendar.SUNDAY) {
+		} else if (dayOfWeek == Calendar.SUNDAY) {
 			message = "일요일";
 		}
 		

@@ -9,6 +9,7 @@ public class ImplementsClassDemo {
 		System.out.println(interA.PI);
 		
 		
+		
 	}
 
 }
