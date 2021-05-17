@@ -18,6 +18,7 @@ public class MemberDemo {
 		System.out.println(age);
 		
 	}
+
 	
 	
 	public static void main(String[] args) {
@@ -30,6 +31,7 @@ public class MemberDemo {
 		m.setAddr2("파크리오 아파트 304동 2602호");
 		m.setAge(30);
 		print(m);
+		
 		//print(name, email, zipcode, addr1, addr2, age);
 	
 	}

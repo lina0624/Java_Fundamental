@@ -15,5 +15,11 @@ public class AdminDemo {
 		a1.setPwd("123");
 		a1.setEmail("syh@hbilab.org");
 		a1.setLevel(20);
+		
+		System.out.println(a1.getId());
+		System.out.println(a1.getPwd());
+		System.out.println(a1.getEmail());
+		System.out.println(a1.getLevel());
+		
 	}
 }

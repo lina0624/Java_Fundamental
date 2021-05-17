@@ -6,7 +6,7 @@ public class Child extends Parent {
 	double height;
 	
 	public Child(String name, String address, int age, String phone, double weight, double height) {
-		super(name, address, age);
+		super(name, address, age); //상위 클래스의 매개변수가 있는 생성자 호출
 		this.phone = phone;
 		this.weight = weight;
 		this.height = height;

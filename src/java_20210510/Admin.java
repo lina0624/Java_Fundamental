@@ -1,3 +1,5 @@
+
+
 package java_20210510;
 
 public  class Admin {
@@ -19,7 +21,7 @@ public  class Admin {
 	//1. 자기자신 객체 => this or this. => 위치는 메서드, 생성자 모두 사용
 	//2. 다른 생성자를 호출 => this(~) => 위치는 생성자에서만 사용 가능
 	public Admin(String id, String pwd, String email) {
-		this(id,pwd,email,0);
+		this(id,pwd,email,0); //다른 생성자 호출
 	}
 	public Admin(String id, String pwd, String email, int level) {
 		//super();

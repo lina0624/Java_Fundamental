@@ -15,7 +15,9 @@ public class EmployeeDemo {
 		e1.id = "syh1011";
 		e1.pwd = "1234";
 		
+		//String name = e1.pwd;
 		
+		//System.out.println(name);
 		
 	}
 }

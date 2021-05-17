@@ -50,7 +50,7 @@ public class Calendar {
 		if(year != 0 && month != 0 && day != 0) {
 			printDay();
 		}else if(year != 0 && month != 0 && day==0) {
-			printMonth(year, month);
+			print(year, month);
 		}else if(year != 0 && month == 0 && day==0) {
 			printYear();
 		}
@@ -81,7 +81,7 @@ public class Calendar {
 		
 		
 	}
-	private void printMonth(int year, int month) {
+	private void print(int year, int month) {
 		System.out.println(year+"년 "+month+"월 달력입니다.");
 		System.out.println("일\t월\t화\t수\t목\t금\t토");
 		
@@ -103,7 +103,8 @@ public class Calendar {
 			if(count%7 ==0) System.out.println();
 		}
 		System.out.println();
-
+		
+		
 		
 	}
 	private void printYear() {

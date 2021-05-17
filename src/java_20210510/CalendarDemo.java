@@ -8,7 +8,7 @@ public class CalendarDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Calendar c = new Calendar(2021,6);
+		Calendar c = new Calendar(2021);
 		c.print();
 	}
 

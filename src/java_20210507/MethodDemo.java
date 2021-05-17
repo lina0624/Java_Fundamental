@@ -20,7 +20,7 @@ public class MethodDemo {
 	public int[] ascending(int[] array) {
 		for (int i=0; i<array.length; i++) {
 			for (int j=0; j<array.length -(i+1); j++) {
-				if (array[j] < array[j+1]) {
+				if (array[j] > array[j+1]) {
 					int temp = array[j];
 					array[j] = array[j+1];
 					
@@ -47,8 +47,8 @@ public class MethodDemo {
 		int sum = m.plus(10, 20); //10,20 => 인자(arguments)
 		System.out.printf("%d%n", sum);
 		
-		boolean leafYear = m.isLeafYear(2000);
-		System.out.printf("%s %n", leafYear);
+		boolean leapYear = m.isLeafYear(2000);
+		System.out.printf("%s %n", leapYear);
 		
 		int[] test = {10,20,1,30,4,89,100,25};
 		int[] afterTest = m.ascending(test);
