@@ -12,7 +12,7 @@ public class FileReaderWriterDemo {
 		
 		try {
 			fr = new FileReader("C:\\dev\\test\\2021\\05\\18\\FileInOutStreamDemo.java");
-			fw = new FileWriter("C:\\dev\\test\\2021\\05\\18\\FileInOutStreamDemo-copy.java");
+			fw = new FileWriter("C:\\dev\\test\\2021\\05\\18\\FileInOutStreamDemo-copy.java", true);
 			
 			/*
 			int readChar = 0;
