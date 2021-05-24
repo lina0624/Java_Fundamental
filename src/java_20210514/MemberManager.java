@@ -1,5 +1,6 @@
 package java_20210514;
 
+
 import java.util.ArrayList;
 
 public class MemberManager {

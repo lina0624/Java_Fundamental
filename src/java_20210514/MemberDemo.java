@@ -1,38 +1,56 @@
 package java_20210514;
 
-public class Member {
-	private String id;
-	private String name;
-	private int age;
-	
-	public Member() {//
-		super();
-		// TODO Auto-generated constructor stub
+import java.util.ArrayList;
+
+public class MemberDemo {
+	public static void main(String[] args) {
+		MemberManager m = new MemberManager();
+		m.insert("syh1011","성영한1",10);
+		m.insert("syh2022","성영한2",20);
+		m.insert("syh3033","성영한3",30);
+		m.insert("syh4044","성영한4",40);
+		
+		ArrayList list = m.select();
+		for(int i=0;i<list.size();i++) {
+			Member m2 = (Member)list.get(i);
+			System.out.printf("%s, %s, %d %n",
+					m2.getId(), m2.getName(), m2.getAge());
+		}
+		System.out.println("==========================");
+		
+		m.delete("syh1011");
+		for(int i=0;i<list.size();i++) {
+			Member m2 = (Member)list.get(i);
+			System.out.printf("%s, %s, %d %n",
+					m2.getId(), m2.getName(), m2.getAge());
+		}
+		System.out.println("==========================");
+		
+		m.update("syh2022","성영한2",100);
+		
+		for(int i=0;i<list.size();i++) {
+			Member m2 = (Member)list.get(i);
+			System.out.printf("%s, %s, %d %n",
+					m2.getId(), m2.getName(), m2.getAge());
+		}
+		System.out.println("==========================");
+		
+		
+		
+		
+		
+		Member m3 = m.select("syh4044");//
+		System.out.printf("%s, %s, %d %n",
+				m3.getId(), m3.getName(), m3.getAge());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
-	public Member(String id, String name, int age) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.age = age;
-	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	
-	
 }

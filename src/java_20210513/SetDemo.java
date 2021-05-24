@@ -27,6 +27,7 @@ public class SetDemo {
 			String temp = (String)i.next();  //String으로 넣었기 때문에, String으로 캐스팅
 			System.out.println(temp);
 		}
+	
 		
 		
 		TreeSet lottoSet = new TreeSet();
