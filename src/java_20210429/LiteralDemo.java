@@ -20,7 +20,7 @@ public class LiteralDemo {
 		
 		double d1 = 1234.45;
 		
-		char isExited = \uc131;
+		char isExited = '\uc131';
 		
 		//System.out.println(a5);
 		//System.out.println(a6);
